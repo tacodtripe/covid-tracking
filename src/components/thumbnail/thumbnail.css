@@ -14,7 +14,7 @@ p {
 
 .thumbnailImg {
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .bi-arrow-right-circle {
@@ -23,6 +23,9 @@ p {
   right: 15px;
 }
 
-.bi::before {
-  font-weight: 900 !important;
+.thumbnailLink {
+  color: white;
+  top: -1px;
+  right: 36px;
+  font-weight: 400;
 }

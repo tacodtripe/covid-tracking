@@ -11,7 +11,7 @@ function MainThumbnail(props) {
     return null;
   }
   return (
-    <div className="row" data-test="mainThumbnail">
+    <div className="row mainThumbnail" data-test="mainThumbnail">
       <div className="col-6 row align-content-center">
         <img className="mainThumbnailImg col" src={flag} alt="country flag" />
       </div>

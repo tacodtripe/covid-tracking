@@ -14,7 +14,10 @@ function Thumbnail(props) {
     <div className="row thumbnailContainer my-1" data-test="Thumbnail">
       <div className="col-12 position-relative">
         <img className="thumbnailImg" src={flag} alt="country flag" />
-        <Link to="thumbnailDetails"><i className="position-absolute bi bi-arrow-right-circle" /></Link>
+        <Link to="thumbnailDetails">
+          <span className="position-absolute thumbnailLink">Details</span>
+          <i className="position-absolute bi bi-arrow-right-circle" />
+        </Link>
       </div>
       <div className="col-12">
         <h5 className="text-center" data-test="countryName">{country}</h5>

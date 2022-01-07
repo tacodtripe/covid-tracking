@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+}
+
+.detailData:nth-of-type(even),
+.detailData:nth-of-type(even) p {
+  background-color: rgb(31, 31, 31);
+}
+
+.homeLink {
+  color: white;
+}

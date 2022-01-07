@@ -1,8 +1,12 @@
-.mainThumbnailImg {
-  width: 100%;
-}
-
 h5,
 p {
   margin: 0 !important;
+}
+
+.mainThumbnail {
+  background-color: rgb(31, 31, 31);
+}
+
+.mainThumbnailImg {
+  width: 100%;
 }
