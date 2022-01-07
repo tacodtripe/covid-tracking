@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './mainThumbnail.css';
+import './thumbnail.css';
 
-function MainThumbnail(props) {
+function Thumbnail(props) {
   const {
     country, flag, cases, todayCases,
   } = props;
-
   if (!country) {
     return null;
   }
   return (
-    <div className="row" data-test="mainThumbnail">
-      <div className="col-6 row align-content-center">
-        <img className="mainThumbnailImg col" src={flag} alt="country flag" />
+    <div className="row thumbnailContainer my-1" data-test="Thumbnail">
+      <div className="col-12 position-relative">
+        <img className="thumbnailImg" src={flag} alt="country flag" />
+        <i className="position-absolute bi bi-arrow-right-circle" />
       </div>
-      <div className="col-6">
+      <div className="col-12">
         <h5 className="text-center" data-test="countryName">{country}</h5>
         <p className="text-center" data-test="totalCases">
           Total cases:
@@ -30,11 +30,11 @@ function MainThumbnail(props) {
   );
 }
 
-MainThumbnail.propTypes = {
+Thumbnail.propTypes = {
   country: PropTypes.string.isRequired,
   flag: PropTypes.string.isRequired,
   cases: PropTypes.number.isRequired,
   todayCases: PropTypes.number.isRequired,
 };
 
-export default MainThumbnail;
+export default Thumbnail;

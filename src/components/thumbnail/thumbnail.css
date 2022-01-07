@@ -1,0 +1,28 @@
+h5,
+p {
+  margin: 0 !important;
+}
+
+/* .thumbnailContainer:nth-of-type(odd) {
+  border-right: solid rgb(24, 24, 24) 1px;
+  border-left: solid rgb(24, 24, 24) 1px;
+}
+
+.thumbnailContainer:nth-of-type(even) {
+  border-right: solid rgb(24, 24, 24) 1px;
+} */
+
+.thumbnailImg {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.bi-arrow-right-circle {
+  color: white;
+  top: 0;
+  right: 15px;
+}
+
+.bi::before {
+  font-weight: 900 !important;
+}
