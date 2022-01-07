@@ -21,7 +21,7 @@
       "no-shadow": "off"
     },
     "settings": {
-      "import/core-modules": ["enzyme", "@wojtekmaj/enzyme-adapter-react-17"]
+      "import/core-modules": ["enzyme", "@wojtekmaj/enzyme-adapter-react-17", "check-prop-types"]
     },
     "ignorePatterns": [
       "dist/",

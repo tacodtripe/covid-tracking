@@ -1,3 +1,8 @@
 p {
-  margin: 0;
+  margin: 0 !important;
+}
+
+.navContainer {
+  border-bottom: solid 1px rgb(255, 255, 255);
+  background-color: rgb(44, 44, 143);
 }
