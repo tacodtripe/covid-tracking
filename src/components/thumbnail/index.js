@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import './thumbnail.css';
 
 function Thumbnail(props) {
@@ -13,7 +14,7 @@ function Thumbnail(props) {
     <div className="row thumbnailContainer my-1" data-test="Thumbnail">
       <div className="col-12 position-relative">
         <img className="thumbnailImg" src={flag} alt="country flag" />
-        <i className="position-absolute bi bi-arrow-right-circle" />
+        <Link to="thumbnailDetails"><i className="position-absolute bi bi-arrow-right-circle" /></Link>
       </div>
       <div className="col-12">
         <h5 className="text-center" data-test="countryName">{country}</h5>
