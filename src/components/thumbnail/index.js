@@ -11,7 +11,7 @@ function Thumbnail(props) {
     return null;
   }
   return (
-    <div className="row thumbnailContainer my-1" data-test="Thumbnail">
+    <div className="row thumbnailContainer" data-test="Thumbnail">
       <div className="col-12 position-relative">
         <img className="thumbnailImg" src={flag} alt="country flag" />
         <Link to="thumbnailDetails">
@@ -21,12 +21,14 @@ function Thumbnail(props) {
       </div>
       <div className="col-12">
         <h5 className="text-center" data-test="countryName">{country}</h5>
-        <p className="text-center" data-test="totalCases">
+        <p className="" data-test="totalCases">
           Total cases:
+          <span> </span>
           {cases}
         </p>
-        <p className="text-center" data-test="todayCases">
+        <p className="" data-test="todayCases">
           Today cases:
+          <span> </span>
           {todayCases}
         </p>
       </div>
