@@ -14,3 +14,8 @@
 .thumbnail:nth-of-type(even) {
   border-right: solid rgb(24, 24, 24) 1px;
 }
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}

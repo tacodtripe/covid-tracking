@@ -2,8 +2,11 @@
 import axios from 'axios';
 
 export const GET_DATA = 'covid-tracking/dataReducer/GET_DATA';
+export const SET_COUNTRIES_TO_SHOW = 'covid-tracking/dataReducer/SET_COUNTRIES_TO_SHOW';
+export const NEXT_ELEMENTS = 'covid-tracking/dataReducer/NEXT_ELEMENTS';
+export const PREV_ELEMENTS = 'covid-tracking/dataReducer/PREV_ELEMENTS';
 
-export const fetchData = () => async (dispatch) => {
+export const fetchData = () => async (dispatch, getState) => {
   await axios.get('https://disease.sh/v3/covid-19/countries')
     .then((res) => {
       const arr = res.data.map((e, index) => {
@@ -22,19 +25,42 @@ export const fetchData = () => async (dispatch) => {
         cont.population = e.population;
         return cont;
       });
+      const indexToShow = getState().dataReducer[0];
+      const toShow = arr.filter((e, index) => index === indexToShow[index]);
       dispatch({
         type: GET_DATA,
-        payload: arr,
+        payload: [arr, toShow],
       });
     });
 };
 
-const initialState = [];
+export const nextElements = (arr) => ({
+  type: NEXT_ELEMENTS,
+  payload: arr,
+});
+
+export const nextCountries = (arr) => ({
+  type: SET_COUNTRIES_TO_SHOW,
+  payload: arr,
+});
+
+const initialState = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]];
 
 export const dataReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_DATA:
-      return action.payload;
+      return [...state, action.payload[0], action.payload[1]];
+    case SET_COUNTRIES_TO_SHOW: {
+      const newState = [...state];
+      newState[2] = action.payload;
+      return newState;
+    }
+    case NEXT_ELEMENTS: {
+      const newState = [...state];
+      newState[0] = action.payload;
+      return newState;
+    }
+
     default:
       return state;
   }
