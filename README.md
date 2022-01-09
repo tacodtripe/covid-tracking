@@ -50,3 +50,7 @@ Contributions, issues, and feature requests are welcome! Start by:
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+
+## Design
+- Credit to the [project](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) from [Nelson](https://www.behance.net/sakwadesignstudio) that served as a guide
