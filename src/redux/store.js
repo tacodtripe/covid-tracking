@@ -3,7 +3,7 @@ import ReduxThunk from 'redux-thunk';
 import logger from 'redux-logger';
 import { dataReducer } from './dataReducer';
 
-const reducer = combineReducers({
+export const reducer = combineReducers({
   dataReducer,
 });
 

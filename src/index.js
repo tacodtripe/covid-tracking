@@ -8,12 +8,10 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
-  // <React.StrictMode>
-  <Provider store={store}>
-    <BrowserRouter>
+  <BrowserRouter>
+    <Provider store={store}>
       <App />
-    </BrowserRouter>
-  </Provider>,
-  // </React.StrictMode>,
+    </Provider>
+  </BrowserRouter>,
   document.getElementById('root'),
 );

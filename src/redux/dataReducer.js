@@ -7,6 +7,7 @@ export const NEXT_ELEMENTS = 'covid-tracking/dataReducer/NEXT_ELEMENTS';
 export const PREV_ELEMENTS = 'covid-tracking/dataReducer/PREV_ELEMENTS';
 export const MAIN_FILTER = 'covid-tracking/dataReducer/MAIN_FILTER';
 export const SORT_LIST = 'covid-tracking/dataReducer/SORT_LIST';
+export const SHOW_DETAILS = 'covid-tracking/dataReducer/SHOW_DETAILS';
 
 export const fetchData = () => async (dispatch, getState) => {
   await axios.get('https://disease.sh/v3/covid-19/countries')
@@ -30,9 +31,10 @@ export const fetchData = () => async (dispatch, getState) => {
       const indexToShow = getState().dataReducer[0];
       const toShow = arr.filter((e, index) => index === indexToShow[index]);
       const setMainFilter = ['cases', arr[3]];
+      const detailsToShow = [];
       dispatch({
         type: GET_DATA,
-        payload: [arr, toShow, setMainFilter],
+        payload: [arr, toShow, setMainFilter, detailsToShow],
       });
     });
 };
@@ -54,6 +56,11 @@ export const setMainFilter = (arr) => ({
 
 export const sortList = (arr) => ({
   type: SORT_LIST,
+  payload: arr,
+});
+
+export const showDetails = (arr) => ({
+  type: SHOW_DETAILS,
   payload: arr,
 });
 
@@ -82,6 +89,11 @@ export const dataReducer = (state = initialState, action) => {
     case SORT_LIST: {
       const newState = [...state];
       newState[1] = action.payload;
+      return newState;
+    }
+    case SHOW_DETAILS: {
+      const newState = [...state];
+      newState[4] = action.payload;
       return newState;
     }
     default:
