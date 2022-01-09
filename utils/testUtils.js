@@ -1,4 +1,3 @@
-/* eslint-disable react/forbid-foreign-prop-types */
 import checkPropTypes from 'check-prop-types';
 import { applyMiddleware, createStore } from 'redux';
 import { reducer, middlewares } from '../src/redux/store';

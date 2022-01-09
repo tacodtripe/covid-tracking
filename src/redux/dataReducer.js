@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars, prefer-destructuring */
+/* eslint-disable prefer-destructuring */
 import axios from 'axios';
 
 export const GET_DATA = 'covid-tracking/dataReducer/GET_DATA';

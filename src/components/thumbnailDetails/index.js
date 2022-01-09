@@ -78,18 +78,4 @@ function ThumbnailDetails() {
   );
 }
 
-// ThumbnailDetails.propTypes = {
-//   country: PropTypes.string.isRequired,
-//   flag: PropTypes.string.isRequired,
-//   cases: PropTypes.number.isRequired,
-//   todayCases: PropTypes.number.isRequired,
-//   deaths: PropTypes.number.isRequired,
-//   todayDeaths: PropTypes.number.isRequired,
-//   recovered: PropTypes.number.isRequired,
-//   todayRecovered: PropTypes.number.isRequired,
-//   active: PropTypes.number.isRequired,
-//   critical: PropTypes.number.isRequired,
-//   population: PropTypes.number.isRequired,
-// };
-
 export default ThumbnailDetails;
