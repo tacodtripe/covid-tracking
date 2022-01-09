@@ -1,0 +1,21 @@
+.thumbnailContainer {
+  background-color: rgb(31, 31, 31);
+}
+
+.statsHeader {
+  background-color: rgb(55, 55, 55);
+}
+
+.thumbnail:nth-of-type(odd) {
+  border-right: solid rgb(24, 24, 24) 1px;
+  border-left: solid rgb(24, 24, 24) 1px;
+}
+
+.thumbnail:nth-of-type(even) {
+  border-right: solid rgb(24, 24, 24) 1px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}

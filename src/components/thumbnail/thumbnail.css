@@ -1,0 +1,44 @@
+h5,
+p {
+  margin: 0 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.thumbnailContainer {
+  border-top: solid rgb(24, 24, 24) 1px;
+}
+
+.thumbnailContainer:nth-last-child(1),
+.thumbnailContainer:nth-last-child(2) {
+  border-bottom: solid rgb(24, 24, 24) 1px;
+}
+
+.thumbnailContainer:nth-of-type(odd) {
+  border-right: solid rgb(24, 24, 24) 1px;
+  border-left: solid rgb(24, 24, 24) 1px;
+}
+
+.thumbnailContainer:nth-of-type(even) {
+  border-right: solid rgb(24, 24, 24) 1px;
+}
+
+.thumbnailImg {
+  width: 100%;
+  height: 90.84px;
+  opacity: 0.6;
+}
+
+.bi-arrow-right-circle {
+  color: white;
+  top: 0;
+  right: 15px;
+}
+
+.thumbnailLink {
+  color: white;
+  top: -1px;
+  right: 36px;
+  font-weight: 400;
+}
