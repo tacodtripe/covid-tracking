@@ -8,7 +8,7 @@ Web application that consumes an open source api about covid stadisctics around 
 
 ## API
 
-- [here](https://disease.sh/)
+- [here](https://github.com/disease-sh/api)
 
 ## Built With
 
