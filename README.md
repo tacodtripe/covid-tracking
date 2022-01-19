@@ -6,6 +6,10 @@ Web application that consumes an open source api about covid stadisctics around 
 
 - [here](https://tacodtripecovidtracking.netlify.app/)
 
+## API
+
+- [here](https://disease.sh/)
+
 ## Built With
 
 - Javascript
