@@ -24,52 +24,59 @@ function ThumbnailDetails() {
 
       />
       <div className="row" data-test="thumbnailDetails">
-        <div className="col-12 detailData" data-test="totalDeaths">
+        <div className="col-12 hstack detailData" data-test="totalDeaths">
           <p className="text-center">
             Total deaths:
-            <span> </span>
+          </p>
+          <p className="text-center ms-auto">
             {detailsToShow.deaths}
           </p>
         </div>
-        <div className="col-12 detailData" data-test="todayDeaths">
+        <div className="col-12 hstack detailData" data-test="todayDeaths">
           <p className="text-center">
             Today deaths:
-            <span> </span>
+          </p>
+          <p className="text-center ms-auto">
             {detailsToShow.todayDeaths}
           </p>
         </div>
-        <div className="col-12 detailData" data-test="recovered">
+        <div className="col-12 hstack detailData" data-test="recovered">
           <p className="text-center">
             Total recovered:
-            <span> </span>
+          </p>
+          <p className="text-center ms-auto">
             {detailsToShow.recovered}
           </p>
         </div>
-        <div className="col-12 detailData" data-test="todayRecovered">
+        <div className="col-12 hstack detailData" data-test="todayRecovered">
           <p className="text-center">
             Today recovered:
-            <span> </span>
+          </p>
+          <p className="text-center ms-auto">
             {detailsToShow.todayRecovered}
           </p>
         </div>
-        <div className="col-12 detailData" data-test="active">
+        <div className="col-12 hstack detailData" data-test="active">
           <p className="text-center">
             Country active covid cases:
-            <span> </span>
+          </p>
+          <p className="text-center ms-auto">
             {detailsToShow.active}
           </p>
         </div>
-        <div className="col-12 detailData" data-test="critical">
+        <div className="col-12 hstack detailData" data-test="critical">
           <p className="text-center">
             Critical state patients:
-            <span> </span>
+          </p>
+          <p className="text-center ms-auto">
             {detailsToShow.critical}
           </p>
         </div>
-        <div className="col-12 detailData" data-test="population">
+        <div className="col-12 hstack detailData" data-test="population">
           <p className="text-center">
             Country population:
-            <span> </span>
+          </p>
+          <p className="text-center ms-auto">
             {detailsToShow.population}
           </p>
         </div>
