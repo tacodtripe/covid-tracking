@@ -2,12 +2,13 @@
 
 Web application that consumes an open source api about covid stadisctics around the world, with this application you can be informed about the covid status for almost every country.
 
-## Guide video
-- [here](https://www.loom.com/share/dd60f39c88d44ecfbbc4e6752b0ad82d)
-
 ## Live version
 
 - [here](https://tacodtripecovidtracking.netlify.app/)
+
+## API
+
+- [here](https://github.com/disease-sh/api)
 
 ## Built With
 
